@@ -1,68 +1,173 @@
-body {
-    background-color: rgba(31, 31, 31, 0.425);
-    opacity: .9;
+body{
+background-color: rgb(0, 0, 0);
+background-image: radial-gradient(black, rgb(80, 80, 80), rgb(48, 48, 48))
 }
-h1 {
-    color: greenyellow;
-    text-align: center;
-    border-bottom-style: solid;
-    border-color: greenyellow;
-    border-width: .25em;
-    margin: .25em;
-    font-size: 4em;
-    text-shadow: 1px 1px rgb(185, 185, 185);
-    text-shadow: 2px 2px rgb(122, 122, 122);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-}
-
-h2 {
-    color: greenyellow;
-    text-align: center;
-    border-top-style: solid;
-    border-width: .25em;
-    border-color: greenyellow;
-    text-shadow: 1px 1px rgb(122, 122, 122);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-
-}
-
-.journalForm {
-    background: white;
-    opacity: .9;
-}
+/*flex*/
 .journalForm {
     flex-direction: column;
 }
 
 #journalDate, #ConceptsCovered, #journalEntry, #moodSelector {
-    display: flex; 
-}
-
-button {
-  background-color: greenyellow;
-  border: solid;
-  color: black;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    justify-content: center; 
 }
 
 footer {
-  color: black;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: .1em;
-  background-color: rgba(172, 255, 47, 0.527);
-  opacity: .75;
-  text-align: center;
+    color: white;
+    flex-shrink: 0; 
+    background-color: var(--neon-border-color);
+    opacity: .75;
+    text-align: center;
 }
 
 .big-box {
     margin: 1em;
     padding: 1em;
-    background-color: rgb(0, 0, 0);
 }
+
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+.title, fieldset, button {
+  /* Set neon color */
+  --neon-text-color: #f40;
+  --neon-border-color: #08f;
+}
+
+.subtitle {
+    /* Set neon color */
+    --neon-text-color: #f40;
+  }
+
+.title, fieldset, button, .subtitle {
+  font-family: 'Exo 2', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 200;
+  font-style: italic;
+  color: #fff;
+  padding: 1rem 2rem 1rem;
+  border-width: auto;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation: flicker 3s infinite alternate;     
+}
+
+.set1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1rem 2rem 1rem;
+    border-width: auto;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 2.1s infinite alternate;
+    align-items: center;       
+  }
+
+.set2 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1rem 2rem 1rem;
+    border-width: auto;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 2.4s infinite alternate;  
+    }
+
+.set3 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1rem 2rem 1rem;
+    border-width: auto;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 2.7s infinite alternate;     
+    }    
+.set4 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1rem 2rem 1rem;
+    border-width: auto;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 2.3s infinite alternate;     
+    }
+
+button {
+    font-size: 1.7rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 1rem 2rem 1rem;
+    border-width: auto;
+    border: 0.4rem solid #fff;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    animation: flicker 2.6s infinite alternate;
+    background-color: black; 
+    background-image: radial-gradient(black, rgb(80, 80, 80), rgb(48, 48, 48)) 
+    }
+    
+.subtitle {
+    font-size: 1.2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #fff;
+    padding: 0;
+    text-transform: uppercase;
+    animation: flicker 2.5s infinite alternate;     
+    }
+
+h1::selection, fieldset, button {
+  color: #fff;
+}
+
+h1:focus, fieldset, button {
+  outline: none;
+}
+
+/* Animate neon flicker */
+@keyframes flicker {
+    
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      
+        text-shadow:
+            -0.2rem -0.2rem 1rem #fff,
+            0.2rem 0.2rem 1rem #fff,
+            0 0 2rem var(--neon-text-color),
+            0 0 4rem var(--neon-text-color),
+            0 0 6rem var(--neon-text-color),
+            0 0 8rem var(--neon-text-color),
+            0 0 10rem var(--neon-text-color);
+        
+        box-shadow:
+            0 0 .5rem #fff,
+            inset 0 0 .5rem #fff,
+            0 0 2rem var(--neon-border-color),
+            inset 0 0 2rem var(--neon-border-color),
+            0 0 4rem var(--neon-border-color),
+            inset 0 0 4rem var(--neon-border-color);        
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+        box-shadow: none;
+    }    
+}
+

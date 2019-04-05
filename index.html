@@ -6,29 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Daily Journal</title>
     <link href="css/styles.css" rel="stylesheet">
+    <script src="scripts.js"></script>
 </head>
 <body>
     <div class="big-box">
         <header>
-            <h1>&#40C&#41Ode To Joy</h1>
-            <h2>Finding Joy Through Coding</h1>
+            <h1 class="title">&#40C&#41Ode To Joy</h1>
+            <h2 class="subtitle">Finding Joy Through Coding</h1>
         </header>
+       
         <main>
             <div class=journalForm>
             <form action="">
-                <fieldset> <!--Journal Date-->
+                <fieldset class="set1"> <!--Journal Date-->
                     <label for="journalDate">Date</label>
                     <input type="date" name="journalDate" id="journalDate">
                 </fieldset>
-                <fieldset> <!--Title-->
-                        <label for="conceptsCovered">Concepts Covered</label>
-                        <input type: title="Concepts Covered" name="Concepts Covered" id="ConceptsCovered">
-                </fieldset>
-                <fieldset> <!--Journal Entry-->
-                        <label for="journalEntry">Journal Entry</label>
-                        <textarea for="journalEntry" name="journalEntry" id="journalEntry"></textarea>
-                </fieldset>
-                <fieldset> <!--Mood Selector-->
+                <fieldset class="set4"> <!--Mood Selector-->
                         <label for="moodSelector">Mood Selector</label>
                         <select for="moodSelector" name="moodSelector" id="moodSelector">
                             <option value="happy">😀</option>
@@ -39,11 +33,30 @@
                             <option value="annoyed">🙄</option>
                             <option value="sickAndTired">🤮</option>
                         </select>
+                </fieldset> 
+                <fieldset class="set3"> <!--Journal Entry-->
+                    <label for="journalEntry">Journal Entry</label>
+                    <textarea for="journalEntry" name="journalEntry" id="journalEntry"></textarea>
                 </fieldset>
-                <fieldset> 
+                <fieldset class="set2"> <!--Title-->
+                        <label for="conceptsCovered">Concepts Covered</label>
+                        <input type: title="Concepts Covered" name="Concepts Covered" id="ConceptsCovered">
+                </fieldset>
                         <button type="button">Record Journal Entry</button>
-                </fieldset>
             </form>
+            </div>
+            <div class="audio-player">
+                    <figure>
+                            <figcaption>&#40C&#41Ode To Joy -By Java Sebastian Bash</figcaption>
+                            <audio
+                                controls
+                                autoplay
+                                loop
+                                src="audio/ode to joy.mp3">
+                                    Your browser does not support the
+                                    <code>audio</code> element.
+                            </audio>
+                    </figure>
             </div>
         </main>
         <footer>
