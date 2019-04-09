@@ -12,7 +12,7 @@
     <div class="big-box">
         <header>
             <h1 class="title">&#40C&#41Ode To Joy</h1>
-            <h2 class="subtitle">Finding Joy Through Coding</h1>
+            <h2 class="subtitle">Finding Joy Through Coding</h2>
         </header>
        
         <main>
@@ -25,22 +25,24 @@
                 <fieldset class="set4"> <!--Mood Selector-->
                         <label for="moodSelector">Mood Selector</label>
                         <select for="moodSelector" name="moodSelector" id="moodSelector">
-                            <option value="happy">😀</option>
-                            <option value="mindBlown">🤯</option>
-                            <option value="tearsOfJoy">😂</option>
-                            <option value="crazy">🤪</option>
-                            <option value="money">🤑</option>
-                            <option value="annoyed">🙄</option>
-                            <option value="sickAndTired">🤮</option>
+                            <div class="custom-select" style="200px">
+                                <option value="happy">😀</option>
+                                <option value="mindBlown">🤯</option>
+                                <option value="tearsOfJoy">😂</option>
+                                <option value="crazy">🤪</option>
+                                <option value="money">🤑</option>
+                                <option value="annoyed">🙄</option>
+                                <option value="sickAndTired">🤮</option>
+                            </div>    
                         </select>
                 </fieldset> 
+                <fieldset class="set2"> <!--Title-->
+                        <label for="conceptsCovered">Title</label>
+                        <input type: title="Concepts Covered" name="Title" id="ConceptsCovered">
+                </fieldset>
                 <fieldset class="set3"> <!--Journal Entry-->
                     <label for="journalEntry">Journal Entry</label>
                     <textarea for="journalEntry" name="journalEntry" id="journalEntry"></textarea>
-                </fieldset>
-                <fieldset class="set2"> <!--Title-->
-                        <label for="conceptsCovered">Concepts Covered</label>
-                        <input type: title="Concepts Covered" name="Concepts Covered" id="ConceptsCovered">
                 </fieldset>
                         <button type="button">Record Journal Entry</button>
             </form>
