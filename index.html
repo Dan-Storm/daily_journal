@@ -22,6 +22,10 @@
                     <label for="journalDate">Date</label>
                     <input type="date" name="journalDate" id="journalDate">
                 </fieldset>
+                <fieldset class="set2"> <!--Title-->
+                        <label for="conceptsCovered">Title</label>
+                        <input type: title="Concepts Covered" name="Title" id="ConceptsCovered">
+                </fieldset>
                 <fieldset class="set4"> <!--Mood Selector-->
                         <label for="moodSelector">Mood Selector</label>
                         <select for="moodSelector" name="moodSelector" id="moodSelector">
@@ -36,10 +40,6 @@
                             </div>    
                         </select>
                 </fieldset> 
-                <fieldset class="set2"> <!--Title-->
-                        <label for="conceptsCovered">Title</label>
-                        <input type: title="Concepts Covered" name="Title" id="ConceptsCovered">
-                </fieldset>
                 <fieldset class="set3"> <!--Journal Entry-->
                     <label for="journalEntry">Journal Entry</label>
                     <textarea for="journalEntry" name="journalEntry" id="journalEntry"></textarea>
@@ -61,9 +61,16 @@
                     </figure>
             </div>
         </main>
+        <div>
+            <article id="entryLog">
+
+            </article>
+        </div>
         <footer>
             <p>&copy; 2019 Dan Storm</p>
         </footer>
     </div>
+    <script src="scripts/journal.js"></script>
+    <script src="scripts/domBuilder.js"></script>
 </body>
 </html>
