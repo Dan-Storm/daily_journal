@@ -1,14 +1,12 @@
 const entryLog = document.getElementById("entryLog");
 
-function makeJournalEntryComponent(journalEntries) {
-  journalEntries.forEach(eachEntry => {
+function makeJournalEntryComponent(taco) {
+//   console.log(taco);
     entryLog.innerHTML += `
-    <h1>${eachEntry.date}</h1>
-    <h2>${eachEntry.concept}</h2>
-    <h3>${eachEntry.mood}</h3>
-    <p>${eachEntry.entry}</p>
+    <h1>${taco.date}</h1>
+    <h2>${taco.concept}</h2>
+    <h3>${taco.mood}</h3>
+    <p>${taco.entry}</p>
+    <hr>
     `;
-  });
-}
-
-makeJournalEntryComponent(journalEntries);
+  }
