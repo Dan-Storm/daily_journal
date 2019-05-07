@@ -1,6 +1,6 @@
 const fetchData = {
   getJsonEntries() {
-    fetch("http://localhost:3000/journalEntries")
+    fetch("http://localhost:8088/journalEntries")
       .then(function(response) {
         return response.json();
       })

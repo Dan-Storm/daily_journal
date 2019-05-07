@@ -1,24 +1,28 @@
 {
   "journalEntries": [
     {
+      "id": 1,
       "date": "04/18/2019",
       "title": "Array methods",
       "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
       "mood": "🙄"
     },
     {
+      "id": 2,
       "date": "04/20/2019",
       "title": "Array methods",
       "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
       "mood": "🙄"
     },
     {
+      "id": 3,
       "date": "04/21/2019",
       "title": "Array methods",
       "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",
       "mood": "🙄"
     },
     {
+      "id": 4,
       "date": "04/24/2019",
       "title": "Array methods",
       "entry": "We learned about 4 different array methods today. forEach made sense, but the others still confuse me.",

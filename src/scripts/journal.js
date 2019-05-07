@@ -8,7 +8,7 @@ document.getElementById("submitButton").addEventListener("click", function() {
   };
   
   const makeNewEntry = tacoObj => {
-    fetch("http://localhost:3000/journalEntries", {
+    fetch("http://localhost:8088/journalEntries", {
       method: "POST",
       headers: {
         "content-type": "application/json"
